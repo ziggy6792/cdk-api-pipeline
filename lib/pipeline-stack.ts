@@ -18,22 +18,15 @@ export class PipelineStack extends Stack {
         version: '0.2',
         phases: {
           install: {
-            commands: [
-              'npm install'
-            ],
+            commands: ['npm install'],
           },
           build: {
-            commands: [
-              'npm run build',
-              'npm run cdk synth -- -o dist'
-            ],
+            commands: ['npm run build', 'npm run cdk synth -- -o dist'],
           },
         },
         artifacts: {
           'base-directory': 'dist',
-          files: [
-            'LambdaStack.template.json',
-          ],
+          files: ['LambdaStack.template.json'],
         },
       }),
       environment: {
@@ -41,35 +34,28 @@ export class PipelineStack extends Stack {
       },
     });
 
-    const lambdaBuild = new codebuild.PipelineProject(this, "LambdaBuild", {
+    const lambdaBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
       buildSpec: codebuild.BuildSpec.fromObject({
-        version: "0.2",
+        version: '0.2',
         phases: {
           install: {
-            commands: [
-              'cd lambda',
-              "npm i"
-            ]
+            commands: ['cd lambda', 'npm i'],
           },
           build: {
-            commands: "npm run build"
-          }
+            commands: 'npm run build',
+          },
         },
         artifacts: {
-          "base-directory": "lambda",
-          files: [
-            "build/**/*",
-            "node_modules/**/*",
-            "@types"
-          ]
-        }
+          'base-directory': 'lambda',
+          files: ['build/**/*', 'node_modules/**/*', '@types'],
+        },
       }),
       environment: {
-        buildImage: codebuild.LinuxBuildImage.STANDARD_4_0
-      }
+        buildImage: codebuild.LinuxBuildImage.STANDARD_4_0,
+      },
     });
 
-    const sourceOutput = new codepipeline.Artifact("SrcOutput");
+    const sourceOutput = new codepipeline.Artifact('SrcOutput');
     const cdkBuildOutput = new codepipeline.Artifact('CdkBuildOutput');
     const lambdaBuildOutput = new codepipeline.Artifact('LambdaBuildOutput');
 
@@ -82,9 +68,9 @@ export class PipelineStack extends Stack {
             new codepipeline_actions.GitHubSourceAction({
               actionName: 'Checkout',
               output: sourceOutput,
-              owner: "evayde",
-              repo: "cdk-api-pipeline",
-              oauthToken: SecretValue.plainText(props.githubToken),
+              owner: 'ziggy6792',
+              repo: 'cdk-api-pipeline',
+              oauthToken: SecretValue.secretsManager('GITHUB_OATH_TOKEN', { jsonField: 'GITHUB_OATH_TOKEN' }),
               trigger: codepipeline_actions.GitHubTrigger.WEBHOOK,
             }),
           ],
@@ -115,7 +101,7 @@ export class PipelineStack extends Stack {
               stackName: 'LambdaDeploymentStack',
               adminPermissions: true,
               parameterOverrides: {
-                ...props.lambdaCode.assign(lambdaBuildOutput.s3Location)
+                ...props.lambdaCode.assign(lambdaBuildOutput.s3Location),
               },
               extraInputs: [lambdaBuildOutput],
             }),
