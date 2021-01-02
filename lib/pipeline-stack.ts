@@ -76,19 +76,24 @@ export class PipelineStack extends Stack {
           ],
         },
         {
-          stageName: 'Build',
+          stageName: 'Build CDK',
+          actions: [
+            new codepipeline_actions.CodeBuildAction({
+              actionName: 'CDK_Build',
+              project: cdkBuild,
+              input: sourceOutput,
+              outputs: [cdkBuildOutput],
+            }),
+          ],
+        },
+        {
+          stageName: 'Build Lambda',
           actions: [
             new codepipeline_actions.CodeBuildAction({
               actionName: 'Lambda_Build',
               project: lambdaBuild,
               input: sourceOutput,
               outputs: [lambdaBuildOutput],
-            }),
-            new codepipeline_actions.CodeBuildAction({
-              actionName: 'CDK_Build',
-              project: cdkBuild,
-              input: sourceOutput,
-              outputs: [cdkBuildOutput],
             }),
           ],
         },
