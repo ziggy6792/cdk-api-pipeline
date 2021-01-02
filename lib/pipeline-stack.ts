@@ -34,7 +34,7 @@ export class PipelineStack extends Stack {
       },
     });
 
-    const lambdaStagingBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
+    const lambdaStagingBuild = new codebuild.PipelineProject(this, 'LambdaBuildStaging', {
       buildSpec: codebuild.BuildSpec.fromObject({
         version: '0.2',
         phases: {
@@ -55,7 +55,7 @@ export class PipelineStack extends Stack {
       },
     });
 
-    const lambdaProdBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
+    const lambdaProdBuild = new codebuild.PipelineProject(this, 'LambdaBuildProd', {
       buildSpec: codebuild.BuildSpec.fromObject({
         version: '0.2',
         phases: {
@@ -78,7 +78,8 @@ export class PipelineStack extends Stack {
 
     const sourceOutput = new codepipeline.Artifact('SrcOutput');
     const cdkBuildOutput = new codepipeline.Artifact('CdkBuildOutput');
-    const lambdaBuildOutput = new codepipeline.Artifact('LambdaBuildOutput');
+    const lambdaBuildStagingOutput = new codepipeline.Artifact('LambdaBuildStagingOutput');
+    const lambdaBuildProdOutput = new codepipeline.Artifact('LambdaBuildProdOutput');
 
     new codepipeline.Pipeline(this, 'Pipeline', {
       restartExecutionOnUpdate: true,
@@ -100,16 +101,16 @@ export class PipelineStack extends Stack {
           stageName: 'Build',
           actions: [
             new codepipeline_actions.CodeBuildAction({
-              actionName: 'Lambda_Build_Stagine',
+              actionName: 'Lambda_Build_Staging',
               project: lambdaStagingBuild,
               input: sourceOutput,
-              outputs: [lambdaBuildOutput],
+              outputs: [lambdaBuildStagingOutput],
             }),
             new codepipeline_actions.CodeBuildAction({
-              actionName: 'Lambda_Prod_Stagine',
+              actionName: 'Lambda_Build_Prod',
               project: lambdaProdBuild,
               input: sourceOutput,
-              outputs: [lambdaBuildOutput],
+              outputs: [lambdaBuildProdOutput],
             }),
             new codepipeline_actions.CodeBuildAction({
               actionName: 'CDK_Build',
@@ -128,9 +129,9 @@ export class PipelineStack extends Stack {
               stackName: 'LambdaDeploymentStack',
               adminPermissions: true,
               parameterOverrides: {
-                ...props.lambdaCode.assign(lambdaBuildOutput.s3Location),
+                ...props.lambdaCode.assign(lambdaBuildStagingOutput.s3Location),
               },
-              extraInputs: [lambdaBuildOutput],
+              extraInputs: [lambdaBuildStagingOutput],
             }),
           ],
         },
