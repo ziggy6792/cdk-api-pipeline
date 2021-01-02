@@ -6,7 +6,6 @@ import { App, Stack, StackProps, SecretValue } from '@aws-cdk/core';
 
 export interface PipelineStackProps extends StackProps {
   readonly lambdaCode: lambda.CfnParametersCode;
-  readonly githubToken: string;
 }
 
 export class PipelineStack extends Stack {
@@ -24,6 +23,7 @@ export class PipelineStack extends Stack {
             commands: ['npm run build', 'npm run cdk synth -- -o dist'],
           },
         },
+
         artifacts: {
           'base-directory': 'dist',
           files: ['LambdaStack.template.json'],
@@ -71,7 +71,7 @@ export class PipelineStack extends Stack {
               owner: 'ziggy6792',
               repo: 'cdk-api-pipeline',
               oauthToken: SecretValue.secretsManager('GITHUB_OATH_TOKEN', { jsonField: 'GITHUB_OATH_TOKEN' }),
-              trigger: codepipeline_actions.GitHubTrigger.WEBHOOK,
+              trigger: codepipeline_actions.GitHubTrigger.POLL,
             }),
           ],
         },

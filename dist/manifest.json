@@ -1,0 +1,1378 @@
+{
+  "version": "7.0.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "LambdaStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "LambdaStack.template.json"
+      },
+      "metadata": {
+        "/LambdaStack/MyLambda/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaServiceRole4539ECB6",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Function (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:544:31)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:16:16)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyLambda/LambdaSourceBucketNameParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaLambdaSourceBucketNameParameterBD6A9DA0",
+            "trace": [
+              "CfnParametersCode.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/code.ts:329:31)",
+              "new Function (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:16:16)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyLambda/LambdaSourceObjectKeyParameter": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaLambdaSourceObjectKeyParameter3F0BB05D",
+            "trace": [
+              "CfnParametersCode.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/code.ts:335:30)",
+              "new Function (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:564:29)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:16:16)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyLambda/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaCCE802FB",
+            "trace": [
+              "new Function (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:600:35)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:16:16)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyLambda/Version2021-01-02T06:14:38.220Z/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyLambdaVersion20210102T061438220ZF893950D",
+            "trace": [
+              "new Version (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/lambda-version.ts:187:21)",
+              "Function.addVersion (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function.ts:766:12)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:23:24)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/LambdaAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaAlias9C15A666",
+            "trace": [
+              "new Alias (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/alias.ts:148:19)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:24:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Application/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupApplication7B89ABEB",
+            "trace": [
+              "new LambdaApplication (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/application.ts:67:22)",
+              "new LambdaDeploymentGroup (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:154:45)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/ServiceRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroupServiceRoleA00955F3",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new LambdaDeploymentGroup (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:157:31)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/DeploymentGroup/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "DeploymentGroup6D277AF0",
+            "trace": [
+              "new LambdaDeploymentGroup (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codedeploy/lib/lambda/deployment-group.ts:164:22)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:30:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApi49610EDF",
+            "trace": [
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:683:22)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiCloudWatchRole2BEC1A9C",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "LambdaRestApi.configureCloudWatchRole (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:490:18)",
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:700:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiAccount13882D84",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:495:22)",
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:700:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiDeploymentECB0D05Eda8cf06b6aea7f7afb1715f0b1cc1522",
+            "trace": [
+              "new Deployment (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/deployment.ts:71:21)",
+              "LambdaRestApi.configureDeployment (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:506:32)",
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiDeploymentStageprodE1054AF0",
+            "trace": [
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/stage.ts:240:22)",
+              "LambdaRestApi.configureDeployment (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:516:30)",
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiEndpoint869ABE96",
+            "trace": [
+              "LambdaRestApi.configureDeployment (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:521:7)",
+              "new RestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/restapi.ts:703:10)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:50:5)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiproxyE14DBEA4",
+            "trace": [
+              "new Resource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:402:22)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:474:5)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/{proxy+}/ANY/ApiPermission.LambdaStackMyApi366C8285.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiproxyANYApiPermissionLambdaStackMyApi366C8285ANYproxyBB5F72C9",
+            "trace": [
+              "Function.addPermission (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:496:18)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/{proxy+}/ANY/ApiPermission.Test.LambdaStackMyApi366C8285.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiproxyANYApiPermissionTestLambdaStackMyApi366C8285ANYproxy04D94D0D",
+            "trace": [
+              "Function.addPermission (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:496:18)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiproxyANYFCF46C66",
+            "trace": [
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:496:18)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/ANY/ApiPermission.LambdaStackMyApi366C8285.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiANYApiPermissionLambdaStackMyApi366C8285ANY48C07A6F",
+            "trace": [
+              "Function.addPermission (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:63:18)",
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "RootResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:493:29)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/ANY/ApiPermission.Test.LambdaStackMyApi366C8285.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiANYApiPermissionTestLambdaStackMyApi366C8285ANY20BF5FF8",
+            "trace": [
+              "Function.addPermission (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-lambda/lib/function-base.ts:245:5)",
+              "LambdaIntegration.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.ts:71:20)",
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:197:36)",
+              "RootResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:493:29)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyApi/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyApiANYEC3618D9",
+            "trace": [
+              "new Method (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/method.ts:215:22)",
+              "RootResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:187:12)",
+              "ProxyResource.addMethod (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:493:29)",
+              "new ProxyResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:483:29)",
+              "RootResource.addProxy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/resource.ts:191:12)",
+              "new LambdaRestApi (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.ts:57:17)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:36:19)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/MyCf/CFDistribution": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "MyCfCFDistributionD97466FB",
+            "trace": [
+              "new CloudFrontWebDistribution (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-cloudfront/lib/web_distribution.ts:921:26)",
+              "new CdkLambdaStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/lamba-stack.ts:42:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:8:21)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/LambdaStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:20:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    },
+    "PipelineStack": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/ap-southeast-1",
+      "properties": {
+        "templateFile": "PipelineStack.template.json"
+      },
+      "metadata": {
+        "/PipelineStack/CdkBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleBE66F777",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:705:31)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/CdkBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuildRoleDefaultPolicyD27F0F5C",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "PipelineProject.addToRolePolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:204:17)",
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:794:10)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/CdkBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CdkBuild455F642E",
+            "trace": [
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:758:22)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:15:22)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/LambdaBuild/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRole40E116C6",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:705:31)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:37:25)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/LambdaBuild/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildRoleDefaultPolicyBE23D2E1",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "PipelineProject.addToRolePolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:204:17)",
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:794:10)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:37:25)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/LambdaBuild/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "LambdaBuildCF1FE7ED",
+            "trace": [
+              "new Project (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/project.ts:758:22)",
+              "new PipelineProject (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codebuild/lib/pipeline-project.ts:14:5)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:37:25)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/ArtifactsBucketEncryptionKey/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKey01D58D69",
+            "trace": [
+              "new Key (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-kms/lib/key.ts:376:22)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:257:25)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/ArtifactsBucketEncryptionKeyAlias/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucketEncryptionKeyAlias5C510EEE",
+            "trace": [
+              "new Alias (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-kms/lib/alias.ts:198:22)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:263:9)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/ArtifactsBucket/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineArtifactsBucket22248F97",
+            "trace": [
+              "new Bucket (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:1245:22)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:270:21)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleD68726F7",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:281:31)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineRoleDefaultPolicyC7A05455",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:689:27)",
+              "Bucket.grantReadWrite (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:626:17)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:297:25)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineC660917D",
+            "trace": [
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:285:26)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRole2DAE39E9",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:576:20)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:403:29)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Build/Lambda_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildLambdaBuildCodePipelineActionRoleDefaultPolicy3CA005F2",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "CodeBuildAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:138:18)",
+              "CodeBuildAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:59:17)",
+              "RichAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:26:24)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:409:37)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRole15F4B424",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:576:20)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:403:29)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Build/CDK_Build/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineBuildCDKBuildCodePipelineActionRoleDefaultPolicyE350F3F9",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "CodeBuildAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/codebuild/build-action.ts:138:18)",
+              "CodeBuildAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:59:17)",
+              "RichAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:26:24)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:409:37)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleF8A74488",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "Pipeline.getRoleForAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:576:20)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:403:29)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Deploy/Lambda_CFN_Deploy/CodePipelineActionRole/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployCodePipelineActionRoleDefaultPolicy54A1AB67",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Role.addToPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:376:17)",
+              "SingletonPolicy.statementFor (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:577:17)",
+              "SingletonPolicy.grantPassRole (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:567:10)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:298:43)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:434:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:59:17)",
+              "RichAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:26:24)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:409:37)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRole89CA1043",
+            "trace": [
+              "new Role (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:327:18)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:278:32)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:434:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:59:17)",
+              "RichAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:26:24)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:409:37)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/Pipeline/Deploy/Lambda_CFN_Deploy/Role/DefaultPolicy/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "PipelineDeployLambdaCFNDeployRoleDefaultPolicyE83FD793",
+            "trace": [
+              "new Policy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/policy.ts:154:22)",
+              "Role.addToPrincipalPolicy (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/role.ts:368:28)",
+              "Function.addToPrincipal (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:168:61)",
+              "Function.addToPrincipalOrResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-iam/lib/grant.ts:119:26)",
+              "Bucket.grant (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:689:27)",
+              "Bucket.grantRead (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-s3/lib/bucket.ts:566:17)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:288:22)",
+              "CloudFormationCreateUpdateStackAction.bound (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/cloudformation/pipeline-actions.ts:434:32)",
+              "CloudFormationCreateUpdateStackAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline-actions/lib/action.ts:59:17)",
+              "RichAction.bind (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/rich-action.ts:26:24)",
+              "Pipeline._attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:409:37)",
+              "Stage.attachActionToPipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:141:27)",
+              "Stage.addAction (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:91:29)",
+              "new Stage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/private/stage.ts:38:12)",
+              "Pipeline.addStage (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:332:19)",
+              "new Pipeline (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/aws-codepipeline/lib/pipeline.ts:316:12)",
+              "new PipelineStack (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/lib/pipeline-stack.ts:62:5)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:13:1)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ],
+        "/PipelineStack/CDKMetadata/Default": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "CDKMetadata",
+            "trace": [
+              "new MetadataResource (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/metadata-resource.ts:51:24)",
+              "/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:140:5",
+              "visit (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:200:5)",
+              "visit (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:196:5)",
+              "injectMetadataResources (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:131:3)",
+              "Object.synthesize (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/private/synthesis.ts:18:3)",
+              "App.synth (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/@aws-cdk/core/lib/stage.ts:188:23)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/bin/cdk-api-pipeline.ts:20:5)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Module.m._compile (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:858:23)",
+              "Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Object.require.extensions.<computed> [as .ts] (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/index.ts:861:12)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "main (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:227:14)",
+              "Object.<anonymous> (/Users/sive/Documents/Training/serverless/cdk-api-pipeline/node_modules/ts-node/src/bin.ts:513:3)",
+              "Module._compile (internal/modules/cjs/loader.js:1063:30)",
+              "Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)",
+              "Module.load (internal/modules/cjs/loader.js:928:32)",
+              "Function.Module._load (internal/modules/cjs/loader.js:769:14)",
+              "Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:72:12)",
+              "/usr/local/lib/node_modules/npm/node_modules/libnpx/index.js:268:14"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
