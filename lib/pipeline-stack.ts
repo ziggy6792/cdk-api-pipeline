@@ -34,7 +34,28 @@ export class PipelineStack extends Stack {
       },
     });
 
-    const lambdaBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
+    const lambdaStagingBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
+      buildSpec: codebuild.BuildSpec.fromObject({
+        version: '0.2',
+        phases: {
+          install: {
+            commands: ['cd lambda', 'npm i'],
+          },
+          build: {
+            commands: 'npm run build',
+          },
+        },
+        artifacts: {
+          'base-directory': 'lambda',
+          files: ['build/**/*', 'node_modules/**/*', '@types'],
+        },
+      }),
+      environment: {
+        buildImage: codebuild.LinuxBuildImage.STANDARD_4_0,
+      },
+    });
+
+    const lambdaProdBuild = new codebuild.PipelineProject(this, 'LambdaBuild', {
       buildSpec: codebuild.BuildSpec.fromObject({
         version: '0.2',
         phases: {
@@ -79,8 +100,14 @@ export class PipelineStack extends Stack {
           stageName: 'Build',
           actions: [
             new codepipeline_actions.CodeBuildAction({
-              actionName: 'Lambda_Build',
-              project: lambdaBuild,
+              actionName: 'Lambda_Build_Stagine',
+              project: lambdaStagingBuild,
+              input: sourceOutput,
+              outputs: [lambdaBuildOutput],
+            }),
+            new codepipeline_actions.CodeBuildAction({
+              actionName: 'Lambda_Prod_Stagine',
+              project: lambdaProdBuild,
               input: sourceOutput,
               outputs: [lambdaBuildOutput],
             }),
