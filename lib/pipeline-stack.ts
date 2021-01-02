@@ -76,7 +76,7 @@ export class PipelineStack extends Stack {
           ],
         },
         {
-          stageName: 'Build CDK',
+          stageName: 'BuildCDK',
           actions: [
             new codepipeline_actions.CodeBuildAction({
               actionName: 'CDK_Build',
@@ -87,7 +87,7 @@ export class PipelineStack extends Stack {
           ],
         },
         {
-          stageName: 'Build Lambda',
+          stageName: 'BuildLambda',
           actions: [
             new codepipeline_actions.CodeBuildAction({
               actionName: 'Lambda_Build',
